@@ -1,0 +1,41 @@
+
+#coding journal #2 uhhhhh im learning javascript and pythong side by side, idk if thats the best idea but I don't think it matters also, I will only be focusing on myself till I am ready for a relationship, until then I will focus on no one, however I am stuck in this dilemma, can I talk to women even if I don't intend to pursue them romantically? obviously yes, however I am unable to communicate with a woman without approaching them romantically, I am afraid they will mistaken me for that reason, and if I am not approaching them romantically am I not simply wasting time by interacting with them as a friend????
+#I think I do know the solution to this, assume no romantic interests, be a friend and excercise your social skills, it is fine to mess up, it is fine to be unattractive to them since you aren't planning to get with them anyway, simply focus on what you are here to do and if the opportunity presents itself then relate the common experience and share joy, nothing further. Focus on your main activity, if they want to be friends the opportunity will present itself!
+train_mass = 22680
+train_acceleration = 10
+train_distance = 100
+bomb_mass = 1
+c = 3*(10**8)
+
+def f_to_c(f_temp):
+  c_temp =  (f_temp - 32) * (5/9)
+  return c_temp
+
+def c_to_f(c_temp):
+  f_temp = (c_temp * (9/5)) + 32
+  return f_temp
+
+def get_force(mass, acceleration):
+  return mass * acceleration
+
+def get_energy(mass, c):
+    return mass * c
+
+def get_work(mass, acceleration, distance):
+  force = mass * acceleration
+  return force * distance
+
+c0_in_fahrenheit = c_to_f(0)
+f100_in_celsius = f_to_c(100)
+train_force = get_force(train_mass, train_acceleration)
+print("THe GE train supplies", train_force ,"Newtons of force.")
+bomb_energy = get_energy(bomb_mass,c)
+print(bomb_energy)
+
+print("A 1kg bomb supplies ", bomb_energy ," Joules.")
+
+train_work = get_work(train_mass,train_acceleration,train_distance)
+
+print("The GE train does X Joules of work over ",train_work," meters.")
+
+
